@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCTurnera", "MVCTurnera\MVCTurnera.csproj", "{5CB72987-092C-49A1-B6C7-7139CD57B925}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5CB72987-092C-49A1-B6C7-7139CD57B925}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CB72987-092C-49A1-B6C7-7139CD57B925}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CB72987-092C-49A1-B6C7-7139CD57B925}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CB72987-092C-49A1-B6C7-7139CD57B925}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6A350D08-25AB-4626-B924-9F8B335D7E74}
+	EndGlobalSection
+EndGlobal
