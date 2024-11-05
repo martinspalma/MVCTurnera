@@ -11,6 +11,10 @@ namespace MVCTurnera
 
             var app = builder.Build();
 
+            builder.Services.AddDbContext<TurneraDatabaseContext>(options =>
+            options.UseSqlServer(builder.Configuration["ConnectionString:ObraSocialDBConnection"]));
+
+
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())
             {
