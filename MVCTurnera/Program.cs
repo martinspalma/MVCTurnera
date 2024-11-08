@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using MVCTurnera.Context;
+
 namespace MVCTurnera
 {
     public class Program
@@ -6,13 +9,14 @@ namespace MVCTurnera
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            builder.Services.AddDbContext<TurneraDatabaseContext>(options => options.UseSqlServer(builder.Configuration["ConnectionString:TurneraDBConnection"]));
+
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
             var app = builder.Build();
 
-            builder.Services.AddDbContext<TurneraDatabaseContext>(options =>
-            options.UseSqlServer(builder.Configuration["ConnectionString:ObraSocialDBConnection"]));
+            
 
 
             // Configure the HTTP request pipeline.
